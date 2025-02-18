@@ -1,17 +1,25 @@
-import React from "react";
-import "../ImageLinkForm/ImageLinkForm.css";
 
-const Rank = () => {
+import React from 'react';
+
+
+
+const Rank = ({  name,count} ) => {
+
+
+
+  
+
+  
   return (
     <div style={{display:'flex',justifyContent:'center'}}>
-     <div className="white f1">
-                {'mina, your current rank is ...'}
-            </div>
-            <div className="white f1 ">
-                {'#5'}
-            </div>
+      <div className='white f3'>
+        {`${name}, your current entry count is...`}
+      </div>
+      <div className='yellow f1'>
+        {count}
+      </div>
     </div>
   );
-};
+}
 
 export default Rank;
